@@ -1,0 +1,83 @@
+html {
+    font-size: 16px;
+    font-family: 'DM Sans', sans-serif;
+    color: rgb(226, 226, 226);
+    background-color: rgb(21, 29, 39);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 900px;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em 0;
+}
+
+h1, h2, h3 {
+    display: block;
+    font-weight: bold;
+    margin: 1em 0 0.4em 0;
+}
+
+h1 {
+    font-size: 3rem;
+    text-decoration: underline 4px rgb(160, 90, 252);
+}
+
+h2 {
+    color: rgb(160, 90, 252);
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgb(62, 101, 146);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-top: 1.8em;
+}
+
+header {
+    margin: 1em 0 3em 0;
+}
+
+p {
+    font-size: 0.9rem;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+strong {
+    font-weight: 700;
+    color: rgb(160, 90, 252);
+}
+
+pre {
+    border-radius: 4px;
+}
+
+aside {
+    border-left: 1px solid rgb(226, 226, 226);
+}
+
+header p {
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+
+article header {
+    margin-bottom: 2em;
+    width: 100%;
+}
+
+h3 + pre.code-snippet {
+    margin-top: 10pt;
+    margin-bottom: 10pt;
+    background-color: rgb(30, 49, 70);
+}
