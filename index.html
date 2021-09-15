@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="prism/prism.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>JavaScript Functions</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>JavaScript functions practice</h1>
+        </header>
+
+        <article>
+            <header>
+                <h2>Defining and running functions</h2>
+                <p>Reusable procedures that allow us to write reusable, modular code</p>
+            </header>
+
+            <h3>Defining a function:</h3>
+            <pre class="code-snippet">
+<code class="lang-js">function funcName() {
+    // do something
+}
+</code></pre>
+
+            <h3>Running/executing a function:</h3>
+            <pre class="code-snippet">
+<code class="lang-js">funcName()</code></pre>
+
+        </article>
+
+        <article>
+            <header>
+                <h2>Arguments</h2>
+                <p>We can also write functions that accept inputs, called arguments</p>
+            </header>
+
+            <h3>Adding inputs to a function:</h3>
+            <pre class="code-snippet">
+<code class="lang-js">function funcName(input, input2, etc) {
+    // do something
+}</code></pre>
+
+            <p>When we create the function, the inputs we require are called <strong>parameters</strong>, but when we
+                execute/run the function are then called <strong>arguments</strong>.</p>
+
+            <h3>Example</h3>
+            <pre class="code-snippet">
+<code class="lang-js">// Defining the function
+function greet(firstName) {
+    console.log(`Hey there, ${firstName}`);
+}
+
+// Running the function
+greet(&quot;Carlos&quot;); // Hey there, Carlos</code></pre>
+
+        </article>
+    </div>
+
+
+    <script src="prism/prism.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
