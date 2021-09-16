@@ -20,12 +20,26 @@
 </head>
 
 <body>
+    
     <div class="container">
+        <aside class="sidebar">
+            <nav>
+                <a href="#article1">Defining and running functions</a>
+                <a href="#article2">Arguments</a>
+                <a href="#article3">The return keyword</a>
+            </nav>
+        </aside>
+
+        <div class="main">
+            
+        
+        
+        
         <header>
             <h1>JavaScript functions practice</h1>
         </header>
 
-        <article>
+        <article id="article1">
             <header>
                 <h2>Defining and running functions</h2>
                 <p>Reusable procedures that allow us to write reusable, modular code</p>
@@ -46,7 +60,7 @@
 
         </article>
 
-        <article>
+        <article id="article2">
             <header>
                 <h2>Arguments</h2>
                 <p>We can also write functions that accept inputs, called arguments</p>
@@ -71,7 +85,52 @@ function greet(firstName) {
 // Running the function
 greet(&quot;Carlos&quot;); // Hey there, Carlos</code></pre>
 
+<p>We can input many arguments, but we must pay attention to the <strong>order</strong> of the parameters when we define the fuction.</p>
+
+            <h3>Multiple arguments</h3>
+            <pre class="code-snippet">
+<code class="lang-js">function repeatThing(thing, numTimes) {
+    let resultStr = &quot;&quot;;
+    for (let i = 0; i &lt; numTimes; i++){
+      resultStr += thing;
+    }
+    console.log(resultStr);
+  }
+  
+  repeatThing(&quot;lol&quot;, 5); //lollollollollol</code></pre>
         </article>
+
+        <article id="article3">
+            <header>
+                <h2>The return keyword</h2>
+                <p>Built-in methods return storable values when we call them.</p>
+            </header>
+
+            <h3>Method returning a value</h3>
+            <pre class="code-snippet">
+<code class="lang-js">const yell = "Die bart, die!".toUpperCase();
+
+yell; // DIE BART, DIE!</code></pre>
+
+            <p>So far, our functions don't return a value (or return <i>undefined</i>) when called, they're just printing something to the console.</p>
+
+            <h3>Return in action</h3>
+            <pre class="code-snippet">
+<code class="lang-js">function sum(x, y) {
+    let total = x + y;
+    return total;
+    console.log("Honk"); // This line of code won't run
+}
+
+const mathProdigy = sum(2, 2);
+mathProdigy; // 4</code></pre>
+
+<p>On top of that, return, when encountered in a function will prevent any further code from executing (in the function).</p>
+
+
+        </article>
+
+        </div>
     </div>
 
 
